@@ -7,10 +7,10 @@ import {Personne} from "../Model/Personne";
   styleUrls: ['./item-cv.component.css']
 })
 export class ItemCvComponent implements OnInit{
-  @Input()  personne:Personne;
-  @Output() selectedPersonne=new EventEmitter();
+  @Input()  personne!:Personne;
+  @Output() selectedPersonne=new EventEmitter<Personne>();
   constructor() {
-    this.personne=new Personne();
+    
   }
 
   ngOnInit(): void {

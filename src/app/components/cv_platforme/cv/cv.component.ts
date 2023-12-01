@@ -9,7 +9,7 @@ import {Personne} from "../Model/Personne";
 export class CvComponent implements OnInit
 {
   personnes:Personne [];
-  SelectedPesonne:Personne;
+  SelectedPesonne!:Personne;
   constructor() {
     this.personnes=[
       new Personne(1,'Ben Omrane','Med Salim',22,'salim.jpg', 88888888 ,'WEB DEV'),
@@ -19,7 +19,6 @@ export class CvComponent implements OnInit
       new Personne(4,'Turki','Med Seddik',22,'seddik.jpg',44444444,'WEB DEV'),
 
     ];
-    this.SelectedPesonne=new Personne();
   }
 
   ngOnInit(): void {

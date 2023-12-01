@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class FilsComponent {
    @Input() parentback_color='green'
-   myFavoriteColor="blue"
+   myFavoriteColor="green"
    @Output() sendR=new EventEmitter();
   constructor() {
   }
