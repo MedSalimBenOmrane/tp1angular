@@ -9,11 +9,5 @@ export class DefaultImageComponent {
   
   imageName: string = '';
    
-  /*
-  setName(event: Event) {
-    const input = event.target as HTMLInputElement;
-    this.imageName = input.value;
-    console.log(this.defaultImageName); 
-    console.log(this.imageName);
-  }*/
+
 }

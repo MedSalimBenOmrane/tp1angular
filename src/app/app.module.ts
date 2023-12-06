@@ -19,14 +19,21 @@ import {DefaultImagePipe} from "./components/default-image/default-image.pipe";
 import { MiniWordComponent } from './components/mini-word/mini-word.component';
 import { ColorComponent } from "./components/color/color.component";
 import { CarteVisiteComponent } from "./components/carte-visite/carte-visite.component";
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ArcCielComponent } from "./components/arc-ciel/arc-ciel.component";
 import { ArcCielDirective } from "./components/arc-ciel/arc-ciel.directive";
 import { DefaultImageComponent } from "./components/default-image/default-image.component";
+import { EmbaucheComponent } from "./components/cv_platforme/embauche/embauche.component";
+import { ToastrModule } from "ngx-toastr";
+import { ErrorComponentComponent } from './components/error-component/error-component.component';
+import { ROUTING } from "./components/app.routing";
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { DetailComponent } from './components/cv_platforme/detail/detail.component';
+
 
 @NgModule({
-  declarations: [AppComponent, SommeComponent, ComposantCouleurComponent, FilsComponent, ParentComponent, CvComponent, ListeCvComponent, ItemCvComponent, DetailCvComponent, CvComponent, MyDirDirective, DefaultImagePipe, MiniWordComponent,ColorComponent,CarteVisiteComponent,ArcCielDirective, ArcCielComponent,DefaultImagePipe,DefaultImageComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [AppComponent, SommeComponent, ComposantCouleurComponent, FilsComponent, ParentComponent, CvComponent, ListeCvComponent, ItemCvComponent, DetailCvComponent, CvComponent, MyDirDirective, DefaultImagePipe, MiniWordComponent,ColorComponent,CarteVisiteComponent,ArcCielDirective, ArcCielComponent,DefaultImagePipe,DefaultImageComponent, EmbaucheComponent, ErrorComponentComponent, NavbarComponent, DetailComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,BrowserAnimationsModule,ROUTING,ToastrModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })
