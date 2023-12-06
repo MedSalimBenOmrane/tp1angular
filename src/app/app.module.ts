@@ -29,10 +29,11 @@ import { ErrorComponentComponent } from './components/error-component/error-comp
 import { ROUTING } from "./components/app.routing";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DetailComponent } from './components/cv_platforme/detail/detail.component';
+import { FormComponent } from './components/form/form.component';
 
 
 @NgModule({
-  declarations: [AppComponent, SommeComponent, ComposantCouleurComponent, FilsComponent, ParentComponent, CvComponent, ListeCvComponent, ItemCvComponent, DetailCvComponent, CvComponent, MyDirDirective, DefaultImagePipe, MiniWordComponent,ColorComponent,CarteVisiteComponent,ArcCielDirective, ArcCielComponent,DefaultImagePipe,DefaultImageComponent, EmbaucheComponent, ErrorComponentComponent, NavbarComponent, DetailComponent],
+  declarations: [AppComponent, SommeComponent, ComposantCouleurComponent, FilsComponent, ParentComponent, CvComponent, ListeCvComponent, ItemCvComponent, DetailCvComponent, CvComponent, MyDirDirective, DefaultImagePipe, MiniWordComponent,ColorComponent,CarteVisiteComponent,ArcCielDirective, ArcCielComponent,DefaultImagePipe,DefaultImageComponent, EmbaucheComponent, ErrorComponentComponent, NavbarComponent, DetailComponent, FormComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule,BrowserAnimationsModule,ROUTING,ToastrModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],

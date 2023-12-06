@@ -8,6 +8,7 @@ import { DefaultImageComponent } from "./default-image/default-image.component";
 import { MiniWordComponent } from "./mini-word/mini-word.component";
 import { DetailCvComponent } from "./cv_platforme/detail-cv/detail-cv.component";
 import { DetailComponent } from "./cv_platforme/detail/detail.component";
+import { FormComponent } from "./form/form.component";
 
 
 
@@ -29,6 +30,7 @@ const APP_ROUTING: Routes = [
 
     //tp3
     {path: 'color', component: ColorComponent},
+    {path: 'formulaire', component: FormComponent},
     {path: 'arc_ciel', component: ArcCielComponent},
     {path: 'carte_visite', component: CarteVisiteComponent},
     {path: 'default_image', component: DefaultImageComponent},
