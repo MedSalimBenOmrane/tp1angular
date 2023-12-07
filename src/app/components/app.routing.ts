@@ -9,6 +9,7 @@ import { MiniWordComponent } from "./mini-word/mini-word.component";
 import { DetailCvComponent } from "./cv_platforme/detail-cv/detail-cv.component";
 import { DetailComponent } from "./cv_platforme/detail/detail.component";
 import { FormComponent } from "./form/form.component";
+import { ImageObsComponent } from "./images/image-obs.component";
 
 
 
@@ -26,7 +27,8 @@ const APP_ROUTING: Routes = [
       ]},
 
     {path: '', component: CvComponent},
-
+    {path: 'images', component: ImageObsComponent},
+    
 
     //tp3
     {path: 'color', component: ColorComponent},

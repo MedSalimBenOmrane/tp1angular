@@ -1,14 +1,22 @@
+<div>
+
+  <H1>Formulaire :</H1>
+</div>
+
+
 <form #loginForm="ngForm">
     <div>
       <label for="email">Email:</label>
       <input type="email" id="email" ngModel name="email" class="form-control" email required #inputEmail="ngModel"  />
     </div>
     
-
-    <div class="alert alert-danger" *ngIf="!inputEmail.value && inputEmail.touched ">
-      L' Email est requis.
+    <div class=" pb-2 mb-4 text-danger border-bottom border-danger" *ngIf="!inputEmail.value && inputEmail.touched ">
+      <p > L' Email est requis.</p>
     </div>
-    <div class="alert alert-danger" *ngIf="inputEmail.invalid && inputEmail.dirty && inputEmail.touched">
+  
+     
+
+    <div class=" pb-2 mb-4 text-danger border-bottom border-danger"  *ngIf="inputEmail.invalid && inputEmail.dirty && inputEmail.touched">
         L'email n'est pas valide
       </div>
 
@@ -21,13 +29,13 @@
 
 
     
-    <div class="alert alert-danger" *ngIf="!inputpwd.value && inputpwd.touched ">
+    <div class=" pb-2 mb-4 text-danger border-bottom border-danger" *ngIf="!inputpwd.value && inputpwd.touched ">
         Le password est requis.
       </div>
-      <div class="alert alert-danger" *ngIf="inputpwd.invalid && inputpwd.touched">
+      <div class=" pb-2 mb-4 text-danger border-bottom border-danger" *ngIf="inputpwd.invalid && inputpwd.touched">
         Le password doit avoir au moins 4 caractères .
       </div> 
-  <!-- Le bouton « envoyer » ne doit être cliquable que si le formulaire est valide. -->
+
     <button type="submit" [disabled]="loginForm.invalid" class="btn btn-success" >Envoyer</button>
   </form>
   
