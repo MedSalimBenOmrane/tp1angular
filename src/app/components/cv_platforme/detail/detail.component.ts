@@ -25,7 +25,13 @@ export class DetailComponent {
       (params) => {
         console.log(params['id']);
        if (params['id']) {
-          this.personne = this.cvService.getPersonneById(params['id']);
+        this.personne=this.cvService.getPersonneById(params['id']);
+        /*
+          this.cvService.getPersonneById(params['id']).subscribe(
+            (response) => {
+              this.personne = response;
+            },
+          );*/
           console.log(this.cvService.getPersonneById(1));
         } else {
           console.error("ID is undefined");

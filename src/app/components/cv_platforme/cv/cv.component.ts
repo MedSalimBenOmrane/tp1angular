@@ -12,10 +12,22 @@ export class CvComponent implements OnInit
   personnes:Personne [];
   SelectedPesonne!:Personne;
   constructor( private cv_service:CvServiceService) {
-    this.personnes=   this.personnes=this.cv_service.getPersonnesCv();
+    this.personnes=[];
+ 
+
+  
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    this.personnes=this.cv_service.getPersonnesCv();
+    /*
+     this.cv_service.getPersonnesCv().subscribe(
+    (response) => {
+      this.personnes = response;
+   
+    },
+  );
+  */
   }
 
   selectPersonne(personne:Personne){
